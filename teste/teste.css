@@ -1,0 +1,203 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+@font-face {
+    font-family: 'NomedaFonte';
+    src: url(Muthiara\ demo\ version.otf);
+}
+
+h1 {
+    font-family: NomedaFonte;
+    font-size: 30;
+    color: rgb(86, 224, 116);
+    text-shadow: 0px 0px 20px rgb(187, 72, 223); /*ordem dos px: laterais (depende de valor positivo ou negativo), verticais (tbm depende de positivo ou negativo) e dissolução*/
+}
+
+h2#z{
+    font-size: 12pt;
+    color: rgb(57, 43, 255);
+    background-color: rgb(197, 185, 52);
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+p {
+    font-family: 'Shadows Into Light', cursive;
+    text-align: justify;
+    text-indent: 25px;
+    margin-right: 15px;
+}
+a{
+    color: orangered;
+}
+a:hover{
+    text-decoration: underline;
+}
+header#cabecalho img#icone{
+    position: absolute;
+    left: 870px;
+    top: 62px;
+}
+header#cabecalho{
+    border-bottom: 1px #3b041e dashed;
+    height: 200px;
+    background: url('bosh.png') no-repeat;
+}
+header#cabecalho h1{
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+body {
+    background-color: palegreen;
+    color: rgba(45, 67, 134, 1);
+}
+div#interface {
+    width: 900px;
+    background-color: rgb(245, 190, 250);
+    margin: -22px auto 10px auto; /*a ordem é cima, direita, baixo, esquerda*/
+    box-shadow: 0px 0px 10px rgba(230, 104, 255, 0.5); /*a ordem é: deslocamento lateral, deslocamento vertical, espalhamento da sombra e cor da sombra*/
+    padding: 10px; /*a ordem é cima, direita, baixo, esquerda. Nota: se o valor for igual para todos os parâmetros, pode-se colocar o valor somente uma vez*/
+}
+
+table#tab{
+    border: 1px solid #874656;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tab td{
+    border: 1px solid rgb(186, 107, 206);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+table#tab td.ce{
+    color: #ffffff;
+    background-color: rgba(178, 79, 182, 0.781);
+    vertical-align: top;
+    font-weight: bold;
+    text-align: right;
+}
+
+table#tab td.cd{
+    background-color: rgba(252, 169, 255, 0.87);
+}
+
+table#tab caption{
+    color: rgb(165, 0, 165);
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+table#tab caption span{
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+article#noticia h2{
+    font-size: 12pt;
+    color: rgb(57, 43, 255);
+    background-color: rgb(197, 185, 52);
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+/*formatação de imagens com legendas*/
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid lightpink;
+    box-shadow: 1px 1px 4px black;
+}
+/*para a borda nao fugir da imagem*/
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+/*para a legenda ficar bunita na imagem*/
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(132, 187, 38, 0.493);
+    color: rgb(139, 0, 127);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+figure.vamo{
+    position: relative;
+    margin: 14px 5px 0px 5px
+}   
+nav#menu{
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 900px;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: pink;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #be457e;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+section#corpo{
+    display: block;
+    width: 500px;
+    float: left;
+}
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+    border-left: 1px dotted #000000;
+    padding-left: 30px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgb(238, 155, 155);
+}
+footer#rodape{
+    clear: both;
+    border-top: 1px dotted #000000;
+}
+footer#rodape p{
+    text-align: center;
+}

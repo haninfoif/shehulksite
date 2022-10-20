@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="teste.css" media="screen">
+    <title>Estou Aprendendo!</title>
+</head>
+
+<body>
+    <!--background-image: url('url da img');-->
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1 style="text-align: center">She-Hulk</h1>
+                <h2>17 de Agosto. Disney+</h2>
+            </hgroup>
+            <img id='icone' src="shtm.jpg">
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="i" start="3"><!--1. numeros; a. le
+                    tras minúsculas; A. letras maiúsculas; I ou i. algarismos romanos maiúsculos ou minúsculos-->
+                    <li onmouseover="mudaFoto('casa.png')" onmouseout="mudaFoto('shtm.jpg')"><a href='teste.html'>Home</a></li>
+                    <li onmouseover="mudaFoto('muh.jpg')" onmouseout="mudaFoto('shtm.jpg')"><a href='Tatiana.html'>Tatiana Maslany</a></li>
+
+                </ul>
+                <!--<ul type="square">square. quadradinhos; circle. circulos; disc. circulos preenchidos
+                    <li>Jennifer Walters</li>
+                    <li><a href='https://www.imdb.com/name/nm1137209/' target="_blank">Tatiana Maslany</a></li>(target='_blank' vai abrir o link em uma nova guia)
+                    <li>Bruce Banner</li>
+                    <li>Mark Ruffalo</li>-->
+        </nav>
+
+        </header>
+        <section id="corpo">
+            <article id="noticia">
+                <figure class='foto-legenda'>
+                    <img src="shehulk.jpg">
+                    <figcaption>
+                        <h3><p>Tatiana Maslany transformada na advogada com problemas de raiva.</p></h3>
+                    </figcaption>
+                </figure>
+      
+                <div contenteditable="true">
+                    <h2>Dá pra editar</h2>
+                    <p>Parágrafo <span>um</span></p>
+                    <p contenteditable="false">Paragrafo dois</p>
+                </div>
+
+                <hgroup>
+                    <h2>Saiba tudo sobre &nbsp;Jennifer Walters</h2><br><!--&npsp; dá espaço entre duas palavras-->
+                    <h3>Uma advogada comum.<br>
+                    Bem, nem tão comum assim.</h3><br>
+                    <h5>E não a irrite. Você não irá querer vê-la irritada.</h5><br>
+                </hgroup>
+
+                <h2>Relações com Outros Personagens</h2>
+                <table id="tab">
+                    <caption>Relações <span>só to testando</span></caption>
+                    <tr><td rowspan="2" class="ce">Bruce Banner</td> <td class="cd">prima</td></tr>
+                    <tr><td class="cd">aprendiz</td></tr>
+                    <tr><td colspan="2" class="ce">filha da putagem p testar essa porra</td></tr>
+                    <tr><td class="ce">Titânia</td> <td class="cd">Arqui-Inimiga</td></tr>
+                    <tr><td class="ce">Capitã Marvel</td> <td class="cd">melhor amiga</td></tr>
+                </table>
+            </article>
+        </section>
+
+
+
+        <aside id="lateral">
+            <figure class="foto-legenda">
+                <img src="she-hulk.png"/>
+                <figcaption>
+                    <h3><p>Pôster da série. 17 de Agosto no Disney+.</p></h3>
+                </figcaption>
+            </figure>
+
+            <p><strong>Mulher-Hulk</strong> (<em>She-Hulk</em> no original) é uma <span style='text-decoration: underline; font-weight: 900;'>personagem fictícia</span> que aparece nos quadrinhos americanos publicados pela <del>Marvel Comics</del>, criada pelo roteirista <ins>Stan Lee</ins> e pelo desenhista John Buscema em Savage She-Hulk #1 (fevereiro de 1980).<br/></p>
+            
+            <h2 id="z">Qual sua identidade secreta?</h2><br/>
+            <p>Sua identidade secreta é a advogada Jennifer Walters, que após um acidente recebeu uma transfusão de sangue de seu primo, Bruce Banner, e adquiriu uma versão mais branda de sua condição de Hulk, tornando-se uma super-<wbr/>humana. Só vou botar uma palavra grande para testar: O&shy;tor&shy;ri&shy;no&shy;la&shy;rin&shy;go&shy;lo&shy;gis&shy;ta. Como tal, Walters torna-se uma versão grande e poderosa em tons de verde de si mesma enquanto ainda retém sua personalidade. Em particular, ela mantém sua inteligência e controle emocional, embora, como Hulk, ela se torne mais forte e enfurecida. Em edições posteriores, sua transformação é permanente.</p><!--wbr quebra a palavra sem hífen. Para ter hífen, &shy;-->
+
+            <h2 id="z">O que ela fez de útil nessa vida?</h2>
+            <p>Mulher-Hulk foi um membro dos Vingadores, Quarteto Fantástico, Heróis de Aluguel, Defensores, Força Fantástica e S.H.I.E.L.D.. Como um advogada altamente qualificada, ela serviu como consultora jurídica para vários super-heróis em numerosas ocasiões.</p></aside>
+
+        <footer id="rodape"><p>Confira o <a href='https://www.youtube.com/watch?v=rC1nEBQIKFI&t' target="_blank">trailer</a> da série do Disney+.</p></footer>
+
+        <p><sub>2</sub> <sup>3</sup></p>
+    </div>
+    <script src="teste.js"></script>
+</body>
+</html>

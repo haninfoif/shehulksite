@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var quebrada = false;
+        function mudaLampada(tipo) {
+            if (!quebrada) {
+                document.getElementById('luz').src = tipo + ".jpg";
+                if (tipo=='laq') {
+                    quebrada=true;
+                }
+            }
+
+        }
+    </script>
+    <title>JS2</title>
+</head>
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="lap.jpg" id="luz" onmousemove="mudaLampada('lac')" onmouseout="mudaLampada('lap')" onclick="mudaLampada('laq')">
+</body>
+</html>
